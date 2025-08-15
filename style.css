@@ -1,0 +1,62 @@
+:root {
+  /* Paleta "Sombra e Névoa" */
+  --cor-fundo: #0b0c10; /* Um preto azulado bem escuro */
+  --cor-principal: rgba(28, 40, 51, 0.85); /* Caixa principal semi-transparente para ver o fundo */
+  --cor-texto: #C5C6C7; /* Cinza-prateado para texto, ótima leitura */
+  --cor-titulo: #9B59B6; /* Roxo místico para o título principal */
+  --cor-destaque: #66FCF1; /* Ciano fantasmagórico para botões e destaques */
+}
+
+body {
+    /* O LINK DO GIF FOI ATUALIZADO AQUI */
+    background-image: url('https://epicorpg.com.br/wp-content/uploads/2019/03/Seita.gif'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--cor-texto); /* Define a cor padrão do texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sugestão de fonte mais moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-destaque); /* Adiciona uma borda sutil */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo da caixa */
+}
+
+h1 {
+    color: var(--cor-titulo);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+button {
+   background-color: transparent;
+   color: var(--cor-destaque);
+   border: 2px solid var(--cor-destaque);
+   border-radius: 25px;
+   padding: 15px 20px;
+   margin: 10px;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+}
