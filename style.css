@@ -60,3 +60,11 @@ button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
 }
+
+   #custom-cursor {
+       width: 20px;
+       height: 20px;
+       background-image: url('caminho/para/sua/imagem.png'); /* Substitua por sua imagem */
+       background-size: cover;
+       z-index: 9999; /* Garante que o cursor fique por cima de tudo */
+   }
