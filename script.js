@@ -112,3 +112,14 @@ function mostraResultado() {
 }
 
 mostraPergunta();
+
+   document.addEventListener('mousemove', function(e){
+       // Mover o cursor personalizado para a posição do mouse
+       document.getElementById('custom-cursor').style.left = e.clientX + 'px';
+       document.getElementById('custom-cursor').style.top = e.clientY + 'px';
+   });
+
+   document.addEventListener('mouseover', function(e){
+       // Ocultar o cursor padrão
+       document.body.style.cursor = 'none';
+   });
